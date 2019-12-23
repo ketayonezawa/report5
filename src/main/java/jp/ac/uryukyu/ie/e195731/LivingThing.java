@@ -28,6 +28,11 @@ public class LivingThing {
     public String getName(){
         return name;
     }
+
+    /**対象を攻撃をするメソッド
+     *
+     * @param opponent 攻撃対象
+     */
     public void attack(LivingThing opponent){
         if (dead!=true){
             int damage = (int)(Math.random() * attack);
